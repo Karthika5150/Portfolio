@@ -1,0 +1,323 @@
+/* UNIVERSAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.p-main {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(29, 65, 106);
+}
+
+.projects>div:nth-child(1) {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 30px;
+}
+
+.suitcase {
+    font-size: 100px;
+    border: 10px solid rgb(30, 59, 95);
+    border-radius: 20px;
+    padding: 20px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.projects>div:nth-child(1)>h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.projects>div:nth-child(1)>p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+    font-weight: 700;
+}
+
+
+
+.screen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid white; */
+    align-items: center;
+}
+
+.screen>div {
+    width: 450px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    border:1px solid red;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.screen>div:hover .content {
+    bottom: 0px;
+    transition: 1s;
+}
+
+.screen>div:hover .shadow {
+    filter: blur(3px);
+}
+
+.screen>div>div {
+    width: 450px;
+    height: 170px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -170px;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 999;
+}
+
+.screen>div>div>h3 {
+    color: rgb(29, 65, 106);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.screen>div>div>p {
+    color: rgb(29, 65, 106);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.screen>div>div>a {
+    background-color: rgb(232, 92, 41);
+    color: white;
+    border: none;
+    padding: 2px 4px 2px 4px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.screen>div>div>a:hover {
+    background-color: orangered;
+}
+
+.screen>div>img {
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    border-radius: 12px;
+    filter: brightness(60%);
+}
+
+
+
+@media only screen and (min-width:750px) and (max-width:899px) {
+    .suitcase {
+        font-size: 130px;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (min-width:550px) and (max-width:749px) {
+    
+    .projects {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .projects>div:nth-child(1) {
+        margin-bottom: 25px;
+        padding: 10px;
+    }
+
+    .projects>div:nth-child(1)>h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .projects>div:nth-child(1)>p {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .projects>div:nth-child(1)>button {
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .suitcase {
+        font-size: 130px;
+        padding: 20px;
+    }
+
+    .screen>div {
+        width: 350px;
+        height: 200px;
+    }
+
+    .screen>div>div {
+        width: 350px;
+        height: 130px;
+        padding: 15px;
+    }
+
+    .screen>div>div>p {
+        font-size: 12px;
+    }
+
+    .screen>div>div>h3 {
+        font-size: 17px;
+    }
+
+    .screen>div>div>a {
+        font-size: 12px;
+    }
+
+    .screen>div>img {
+        width: 350px;
+        height: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:549px) {
+
+    .projects {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .projects>div:nth-child(1) {
+        margin-bottom: 20px;
+        padding:10px;
+    }
+
+    .projects>div:nth-child(1)>h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .projects>div:nth-child(1)>p {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .projects>div:nth-child(1)>button {
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .suitcase {
+        font-size: 80px;
+        padding: 10px;
+        border: 5px solid rgb(30, 59, 95);
+    }
+
+    .screen>div {
+        width: 280px;
+        height: 150px;
+    }
+
+    .screen>div>div {
+        width: 280px;
+        height: 125px;
+        padding: 15px;
+    }
+
+    .screen>div>div>p {
+        font-size: 12px;
+        margin-bottom: 5px;
+        line-height: 16px;
+    }
+
+    .screen>div>div>h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .screen>div>div>a {
+        font-size: 12px;
+    }
+
+    .screen>div>img {
+        width: 280px;
+        height: 150px;
+    }
+
+}
+
+
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.project-content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    /* background: rgb(29, 65, 106); */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.4s ease-in-out;
+}
+
+.project-card:hover .project-content{
+    bottom: 0; /* Moves content from bottom to top */
+}
+
+.btn-1{
+    padding: 7px 20px;
+    background-color: #fff;
+    color: rgb(30, 59, 95);
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:1px solid #fff;
+}
+

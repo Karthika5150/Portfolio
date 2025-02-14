@@ -1,0 +1,284 @@
+/* UNIVERSAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    /* border:2px solid #fff; */
+}
+
+.profile {
+    /* width: 70%; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    background-color: rgb(29, 65, 106);
+}
+
+
+.content {
+    padding-top: 100px;
+    /* border:2px solid red; */
+}
+
+.content>h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.content>p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.profile-div {
+    width: 80%;
+    height: 80%;
+}
+
+.profile-div>img {
+    border-radius: 50%;
+}
+
+.profile>img {
+    width: 280px;
+    height: 350px;
+    border-radius: 10%;
+    filter: brightness(60%);
+}
+
+.skills {
+    width: 70%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(29, 65, 106);
+    text-align: center;
+}
+
+.laptop {
+    font-size: 150px;
+    border: 10px solid rgb(30, 59, 95);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.skills>h1:nth-child(2) {
+    color: white;
+}
+
+.code {
+    margin-top: 40px;
+}
+
+.code>.s-1 {
+    font-size: 60px;
+    color: orangered;
+}
+
+.code>.s-2 {
+    font-size: 60px;
+    color: aqua;
+}
+
+
+.code>.s-3 {
+    font-size: 65px;
+    color: orange;
+}
+
+.code>.s-4 {
+    font-size: 73px;
+    color: rgb(169, 51, 198);
+}
+
+.code>.s-5 {
+    font-size: 50px;
+    color: navy;
+    background-color: rgb(154, 154, 143);
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:550px) {
+
+    .profile {
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .profile>div:nth-child(2) {
+        width: unset;
+    }
+
+    .profile>div:nth-child(2)>h1 {
+        margin-bottom: 10px;
+    }
+
+    .profile>div:nth-child(2)>p {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .profile>div:nth-child(2)>button {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .profile>img {
+        width: 230px;
+        height: 290px;
+    }
+
+
+    .skills {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .skills>h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .laptop {
+        font-size: 80px;
+        padding: 10px;
+        border: 5px solid rgb(30, 59, 95);
+    }
+
+    .code {
+        margin-top: 20px;
+    }
+
+    .code>.s-1 {
+        font-size: 40px;
+    }
+
+    .code>.s-2 {
+        font-size: 40px;
+    }
+
+    .code>.s-3 {
+        font-size: 45px;
+    }
+
+    .code>.s-4 {
+        font-size: 53px;
+    }
+
+    .code>.s-5 {
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (min-width:551px) and (max-width:800px) {
+
+    .profile {
+        width: 80%;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .profile>div:nth-child(2) {
+        width: unset;
+    }
+
+    .profile>div:nth-child(2)>h1 {
+        margin-bottom: 10px;
+    }
+
+    .profile>div:nth-child(2)>p {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .profile>div:nth-child(2)>button {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .profile>img {
+        width: 230px;
+        height: 290px;
+    }
+
+    .skills {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .laptop {
+        font-size: 130px;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (min-width:750px) and (max-width:800px) {
+
+    .profile {
+        width: 70%;
+    }
+
+    .skills {
+        width: 70%;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (min-width:801px) and (max-width:1000px) {
+
+    .profile>div:nth-child(2) {
+        width: unset;
+    }
+
+    .profile>div:nth-child(2)>h1 {
+        margin-bottom: 10px;
+    }
+
+    .profile>div:nth-child(2)>p {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .profile>div:nth-child(2)>button {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .profile>img {
+        width: 230px;
+        height: 290px;
+    }
+}
+
+.btn-1{
+    padding: 7px 20px;
+    background-color: #fff;
+    color: rgb(30, 59, 95);
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:1px solid #fff;
+}

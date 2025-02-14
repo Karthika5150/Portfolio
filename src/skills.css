@@ -1,0 +1,51 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    background-color: white; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container>h2{
+    color:rgb(30, 59, 95);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.skill-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    text-align: center;
+}
+
+.gauge-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;  /* Match SVG width */
+    height: 90px;  /* Adjust height accordingly */
+}
+
+.icon {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 35px;
+}
+
+/* Style for Percentage Text */
+.percentage-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
